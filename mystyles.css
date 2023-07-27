@@ -1,0 +1,107 @@
+
+
+.player{
+    
+    border-style:ridge;
+    border-radius: 50%;
+    border-color: magenta;
+    position: absolute;
+    background-color: aquamarine;
+  top: 25%;
+  left: 50%;
+  transform: translate(-50%, 100%);
+  animation: player 7s linear infinite alternate;
+  padding:20px;
+  border-width: 10px;
+
+}
+
+a{
+  text-decoration: none;
+  background-color: greenyellow;
+  color:red;
+  border-radius: 30%;
+  padding:10px;
+  position: relative;top:20px;
+  
+}
+.dancer{position: relative;top: 400px;
+width:250px;}
+
+.container{
+
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    animation: container 13s linear infinite alternate;
+}
+marquee{
+    margin-top: 20px;
+    color:blueviolet;
+    font-size: 35px;
+    font-family: arial;
+    font-style: bold;
+}
+.player:hover{
+    background-color: pink;
+}
+
+body{
+    background: linear-gradient(270deg,pink,yellow);
+    background-size: 400% 400%;
+
+    -webkit-animation: AnimationName 10s ease infinite;
+    animation: AnimationName 10s ease infinite;
+}
+
+@-webkit-keyframes AnimationName {
+    0%{background-position:0% 31%}
+    50%{background-position:100% 70%}
+    100%{background-position:0% 31%}
+}
+@keyframes AnimationName {
+    0%{background-position:0% 31%}
+    50%{background-position:100% 70%}
+    100%{background-position:0% 31%}
+}
+
+
+
+@keyframes container {
+  100% {
+    transform: translateX( 100px,-100px);
+  }
+}
+
+@keyframes player {
+  100% {
+    transform: translateY(100px);
+  }
+}
+
+.box{
+
+  background: palevioletred;
+  border-style: double;
+  border-color: aquamarine;
+  border-width: 10px;
+  background-blend-mode: lighten;
+  color:white;
+  border-radius: 100px;
+  padding:20px;
+  display: inline-block;
+  align-items: right;
+  position: relative; top:250px;left:500px;
+
+}
+
+
+.city{
+  font-size: 20px;
+}
+
+.lute{
+  width:500px;
+  position:absolute;right:-50px;top:-100px;
+  transform: rotate(-30deg);
+}
