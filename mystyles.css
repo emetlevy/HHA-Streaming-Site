@@ -13,6 +13,7 @@
   animation: player 7s linear infinite alternate;
   padding:20px;
   border-width: 10px;
+  z-index: 1;
 
 }
 
@@ -38,9 +39,9 @@ width:250px;}
 marquee{
     margin-top: 20px;
     color:blueviolet;
-    font-size: 35px;
+    font-size: 40px;
     font-family: arial;
-    font-style: bold;
+    font-weight: 1000;
 }
 .player:hover{
     background-color: pink;
@@ -91,7 +92,7 @@ body{
   padding:20px;
   display: inline-block;
   align-items: right;
-  position: relative; top:250px;left:500px;
+  position: relative; top:250px;left:100px;
 
 }
 
